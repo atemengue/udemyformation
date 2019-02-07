@@ -55,12 +55,11 @@ const validate = values => {
 }
 
 
-const formWrapperd =  reduxForm({
+export default reduxForm({
   form: 'streamForm',
   validate
 })(StreamForm);
 
-export default formWrapperd;
 
 // return <input  
     // onChange={formProps.input.onChange}
